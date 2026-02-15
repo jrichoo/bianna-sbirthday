@@ -14,7 +14,7 @@
 
                     :root {
                         --primary-color: #fb578e;
-                        --secondary-color: #ff4dc1
+                        --secondary-color: #ff4dc1;
                         --accent-color: #FFD93D;
                         --purple: #f508a6;
                         --blue: #6BCBFA;
@@ -1644,4 +1644,5 @@
         .gallery-section {
             overflow: hidden;
         }
+
 
