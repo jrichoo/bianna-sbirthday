@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brianna's Birthday Party! 🎉</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="invitation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&family=Sekuya&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&family=Sekuya&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Intro Section -->
+    <div class="intro" id="intro">
+        <h1>🎂 Surprise! 🎂</h1>
+        <p>Click the button to unveil Brianna's Birthday Invitation!</p>
+        <button class="enter-btn" onclick="showInvitation()">Enter the Party! 🎉</button>
+    </div>
+
+    <!-- Invitation Container -->
+        <div class="invitation hidden" id="invitation">
+        <!-- Hero Section -->
+        <div class="hero section" id="home">
+            <!-- Floating Balloons -->
+            <div class="balloon balloon-1"> <img class="melody" src="picked/My Melody Pink Bunny Cute Sticker.png"></div>
+            <div class="balloon balloon-2"><img class="melody" src="picked/My Melody Pink Bunny Cute Sticker.png"></div>
+            <div class="balloon balloon-3"><img class="melody" src="picked/My Melody Pink Bunny Cute Sticker.png"></div>
+            <div class="balloon balloon-4"><img class="melody" src="picked/My Melody Pink Bunny Cute Sticker.png">  </div>
+            
+            <!-- Confetti -->
+            <div class="confetti" style="left: 10%; animation-delay: 0s;"><img class="melody" src="picked/melody2.png"></div>
+            <div class="confetti" style="left: 30%; animation-delay: 2s;"><img class="melody" src="picked/melody2.png"></div>
+            <div class="confetti" style="left: 50%; animation-delay: 4s;"><img class="melody" src="picked/melody2.png"></div>
+            <div class="confetti" style="left: 70%; animation-delay: 1s;"><img class="melody" src="picked/melody2.png"></div>
+            <div class="confetti" style="left: 90%; animation-delay: 3s;"><img class="melody" src="picked/melody2.png"></div>
+
+            <div class="sound-control" id="soundControl" onclick="toggleSound()">
+                <div class="sound-icon">
+                    
+                </div>
+            </div>  
+
+       
+        <!-- TEXT SIDE -->
+        
+     <div class="hero-content">
+    <div class="hero-text">
+        <div class="celebration-text">Please join us to celebrate</div>
+        <div class="name"><span>BRIANNA</span></div>
+        <div class="maureen">MAUREEN</div>
+         <div class="celebration-text">7th Birthday</div>   
+        <div class="dividr"></div>
+        <div class="event-details">
+        </div>
+        
+    </div>
+        <div class="side-hero-container">
+        <img class="side-hero" src="picked/MRL_4256-Photoroom.png">
+    </div>
+</div>
+
+   
+            <!-- Desktop Navigation Icons -->
+            <div class="nav-icons">
+                <a href="#rsvp" class="nav-icon" title="RSVP" aria-label="Go to RSVP">✅</a>
+                <a href="#location" class="nav-icon" title="Location" aria-label="Go to Location">📍</a>
+                <a href="#gallery" class="nav-icon" title="Gallery" aria-label="Go to Gallery">📸</a>
+                <a href="#details" class="nav-icon" title="Details" aria-label="Go to Details">📝</a>
+            </div>
+
+            <!-- Mobile Hamburger Menu -->
+            <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle Navigation Menu">☰</button>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#rsvp" onclick="toggleMenu();">✅ RSVP</a></li>
+                    <li><a href="#location" onclick="toggleMenu();">📍 Location</a></li>
+                    <li><a href="#gallery" onclick="toggleMenu();">📸 Gallery</a></li>
+                    <li><a href="#details" onclick="toggleMenu();">📝 Details</a></li>
+                </ul>
+            </nav>
+        </div>
+ 
+       
+
+           <div class="section gallery-section" id="gallery">
+            <div class="gallery-content">
+                 <div class="balloon balloon-1"><img class="melody" src="picked/My Melody Pink Bunny Cute Sticker.png"></div>
+            <div class="balloon balloon-2"><img class="melody" src="picked/My Melody Pink Bunny Cute Sticker.png">
+               </div>
+            <div class="balloon balloon-3"><img class="melody" src="picked/My Melody Pink Bunny Cute Sticker.png"></div>
+            <div class="balloon balloon-4"><img class="melody" src="picked/My Melody Pink Bunny Cute Sticker.png"></div>
+            
+            <!-- Confetti -->
+            <div class="confetti" style="left: 10%; animation-delay: 0s;"><img class="melody" src="picked/melody2.png"></div>
+            <div class="confetti" style="left: 30%; animation-delay: 2s;"><img class="melody" src="picked/melody2.png"></div>
+            <div class="confetti" style="left: 50%; animation-delay: 4s;"><img class="melody" src="picked/melody2.png"></div>
+            <div class="confetti" style="left: 70%; animation-delay: 1s;"><img class="melody" src="picked/melody2.png"></div>
+            <div class="confetti" style="left: 90%; animation-delay: 3s;"><img class="melody" src="picked/melody2.png"></div>
+                <h2 class="details-title">Photos
+                    <i class="fa-solid fa-camera"></i>
+                </h2>
+                
+                <p style="text-align: center; color: #333; margin-bottom: 2rem; font-size: 1.2rem;">
+                  
+                </p>
+                
+          <div class="gallery-grid">
+
+                <div class="gallery-item1">
+                    <div class="upload-placeholder">
+                    <img class="brianna-pic1" src="picked/MRL_4276.JPG">
+                    </div>
+                </div>
+
+                <div class="gallery-item2">
+                    <div class="upload-placeholder">
+                    <img class="brianna-pic2" src="picked/MRL_4263.JPG">
+                    </div>
+                </div>
+
+                <div class="gallery-item3">
+                    <div class="upload-placeholder">
+                    <img class="brianna-pic2" src="picked/MRL_4286.JPG">
+                    </div>
+                </div>
+
+                <div class="gallery-item4">
+                    <div class="upload-placeholder">
+                    <img class="brianna-pic2" src="picked/MRL_4262.JPG">
+                    </div>
+                </div>
+                </div>
+
+                 <div class="section details-section" id="details">
+            <div class="details-content">
+               
+            
+            <!-- Confetti -->
+            <div class="confetti" style="left: 10%; animation-delay: 0s;"><img class="melody" src="picked/melody2.png"></div>
+            <div class="confetti" style="left: 30%; animation-delay: 2s;"><img class="melody" src="picked/melody2.png"></div>
+            <div class="confetti" style="left: 50%; animation-delay: 4s;"><img class="melody" src="picked/melody2.png"></div>
+            <div class="confetti" style="left: 70%; animation-delay: 1s;"><img class="melody" src="picked/melody2.png"></div>
+            <div class="confetti" style="left: 90%; animation-delay: 3s;"><img class="melody" src="picked/melody2.png"></div>
+                
+            <h2 class="details-title">Event Details 
+                <i class="fa-solid fa-note-sticky"></i></h2></div>
+                <div class="detail-item">
+                    <div class="container">
+                    <div class="gifts"><h3>7th gifts</h3>
+                        <p>Nanay Cel Candiza <br>
+                        Tita Kathleen Alejandro<br>
+                        Tatay Reyyer Maquiras<br>
+                        Tita Ma. Cristina Salas <br>
+                        Tita Mary Jane Ongcay<br>
+                        Lolo Renato Garcia <br>
+                        Lolo Rey Garcia <br>
+                    </p>
+                    </div>
+                    <div class="chocolate"><h3>7th Chocolates</h3>
+                    <p>Ate Kiera Balenton <br>
+                        Caleb Estavillio <br>
+                        Tristan Villarin<br>
+                        Shandie Felices<br>
+                        Tita Kathy Egoy<br>
+                        Jacob Pica<br>
+                        Aquila Zhavia Arma<br></p>
+                    </div>
+
+                    <div class="flowers"><h3>7th flowers</h3>
+                    <p>Tito Jericho Candiza<br>
+                        Tito Rafael Arma<br>
+                        Kian Dale Balenton <br>
+                        Scierux Lance Abella <br>
+                        Nathan Villarin <br>
+                        Narly Nolasco <br>
+                        Papa Monching <br> 
+                    </p></div>
+
+                    <div class="blue-bills"><h3> 7th Blue Bills</h3>
+                    <p>Ninang Mariz Codillo<br>
+                        Ninang Laleine Solomon<br>
+                        Ninang Lot Calvadores<br>
+                        Ninang Jemma Candido<br>
+                        Ninang Mary Joy Precia<br>
+                        Ninong Choi Arma <br>
+                        Ninang Sit Candiza <br></p>  </div>
+                </div>
+            </div>
+            </div>
+          </div> 
+           </div>
+           <div class="gift-center">
+              <div class="details-title">
+              <h2>Gift Ideas</h2>
+            </div>
+            <div class="gift-container">
+             <div class="gift-message">
+                   <i class="fa-solid fa-gift"></i>
+                     With all that we have, we’ve been truly blessed. 
+                    All that is important for us will be your prayers and most
+                     especially your presence on my special day. But if you still 
+                     wish to give, monetary gift for my future needs will very much appreciated
+                </div>
+            </div>
+            
+                 <div class="section location-section" id="location">
+            <!-- Confetti -->
+            <div class="confetti" style="left: 10%; animation-delay: 0s;"><img class="melody" src="picked/melody2.png"></div>
+            <div class="confetti" style="left: 30%; animation-delay: 2s;"><img class="melody" src="picked/melody2.png"></div>
+            <div class="confetti" style="left: 50%; animation-delay: 4s;"><img class="melody" src="picked/melody2.png"></div>
+            <div class="confetti" style="left: 70%; animation-delay: 1s;"><img class="melody" src="picked/melody2.png"></div>
+            <div class="confetti" style="left: 90%; animation-delay: 3s;"><img class="melody" src="picked/melody2.png"></div>
+            <div class="location-content">
+                <h2 class="details-title"><i class="fa-solid fa-map-pin"></i></h2>
+                
+                <div class="detail-item">
+                                 
+                    <p>
+                        <span style="font-size: 25px;">Jollibee Caruncho Pasig City</span><br>
+                     <div class="jabee">
+                        <img class="jabee-pic" src="Jollibee_logo_PNG1.png">
+                     </div>
+                <div class="map-container">
+                  <div class="map-placeholder" style="background: rgba(208, 138, 183, 0.8); border-radius: 10px; padding: 2rem; margin-top: 1rem; font-size: 1.5rem;">
+                        📍🗺️<br>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d7723.338933886247!2d121.0774255!3d14.5608847!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle%20map%20jollibee%20caruncho%20pasig!5e0!3m2!1sen!2sph!4v1770522794097!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                        <div class="detail-item">
+                            <h3></h3> </div>
+                    <div class="countdown-container">
+                <div class="bow">🎀</div>
+                <h1>Counting Down To</h1>
+                <p class="subtitle">Brianna's 7th Birthday Party</p>
+
+                <div class="countdown">
+                    <div class="box">
+                        <span class="number" id="d">00</span>
+                        <span class="label">Days</span>
+                    </div>
+                    <div class="box">
+                        <span class="number" id="h">00</span>
+                        <span class="label">Hours</span>
+                    </div>
+                    <div class="box">
+                        <span class="number" id="m">00</span>
+                        <span class="label">Minutes</span>
+                    </div>
+                    <div class="box">
+                        <span class="number" id="s">00</span>
+                        <span class="label">Seconds</span>
+                    </div>
+                </div>
+
+                <div class="flowers1">March 1, 2026 <br> 3:00 PM</div>
+            </div>
+
+           
+                <div class="section rsvp-section" id="rsvp">    
+                    <div class="rsvp-content">
+                        <div class="rsvp-form">
+                    
+                    <!-- Confetti -->
+                    <div class="confetti" style="left: 10%; animation-delay: 0s;"><img class="melody" src="picked/melody2.png"></div>
+                    <div class="confetti" style="left: 30%; animation-delay: 2s;"><img class="melody" src="picked/melody2.png"></div>
+                    <div class="confetti" style="left: 50%; animation-delay: 4s;"><img class="melody" src="picked/melody2.png"></div>
+                    <div class="confetti" style="left: 70%; animation-delay: 1s;"><img class="melody" src="picked/melody2.png"></div>
+                    <div class="confetti" style="left: 90%; animation-delay: 3s;"><img class="melody" src="picked/melody2.png"></div>
+                            <h2 class="details-title"></h2>
+                           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScivWOWMxzVW6PTebNU6DM-v_7i4C-PCV4HUZ0Yqmtw7FkMBg/viewform?embedded=true" width="800" height="890" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                  <div class="save-date-container">
+                       <div class="confetti" style="left: 10%; animation-delay: 0s;"><img class="melody" src="picked/melody2.png"></div>
+            <div class="confetti" style="left: 30%; animation-delay: 2s;"><img class="melody" src="picked/melody2.png"></div>
+            <div class="confetti" style="left: 50%; animation-delay: 4s;"><img class="melody" src="picked/melody2.png"></div>
+            <div class="confetti" style="left: 70%; animation-delay: 1s;"><img class="melody" src="picked/melody2.png"></div>
+            <div class="confetti" style="left: 90%; animation-delay: 3s;"><img class="melody" src="picked/melody2.png"></div>
+                    <p class="title-message">SAVE THE DATE!</p> </div>
+                    <div class="date-message2">
+                    <p>See you on my special day! 
+                     </p>
+                    </div>
+                    <div class="gift-hero"><img class="gift-reciever" src="picked/MRL_4270.JPG"></div>
+                    <div class="date-message">
+                        <p> <br>
+                            Love, Brianna Maureen</p>
+                    </div>
+                
+
+
+    
+    <script>
+             // Background Music Player Class
+    class BackgroundMusic {
+        constructor(audioSrc, options = {}) {
+            this.audio = new Audio(audioSrc);
+            this.audio.loop = options.loop !== false; // Default true
+            this.audio.volume = options.volume || 0.3; // Default 30% volume
+            this.isPlaying = false;
+            this.hasInteracted = false;
+            
+            // Create music control button
+            this.createMusicButton();
+            
+            // Auto-play on first user interaction
+            this.setupAutoPlay();
+        }
+        
+        createMusicButton() {
+            // Create button container
+            const button = document.createElement('button');
+            button.id = 'music-toggle';
+            button.innerHTML = '🔇'; // Muted icon initially
+            button.setAttribute('aria-label', 'Toggle background music');
+            
+            // Style the button
+            button.style.cssText = `
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background: linear-gradient(145deg, #ff69b4, #e91e63);
+                border: 3px solid #ffb6d2;
+                color: white;
+                font-size: 24px;
+                cursor: pointer;
+                box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+                transition: all 0.3s ease;
+                z-index: 1000;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            `;
+            
+            // Hover effect
+            button.addEventListener('mouseenter', () => {
+                button.style.transform = 'scale(1.1)';
+                button.style.boxShadow = '0 8px 20px rgba(255, 105, 180, 0.6)';
+            });
+            
+            button.addEventListener('mouseleave', () => {
+                button.style.transform = 'scale(1)';
+                button.style.boxShadow = '0 5px 15px rgba(255, 105, 180, 0.4)';
+            });
+            
+            // Click handler
+            button.addEventListener('click', () => {
+                this.toggle();
+            });
+            
+            document.body.appendChild(button);
+            this.button = button;
+        }
+        
+        setupAutoPlay() {
+            // Try to play music on first user interaction
+            const events = ['click', 'touchstart', 'keydown'];
+            
+            const handleInteraction = () => {
+                if (!this.hasInteracted) {
+                    this.hasInteracted = true;
+                    this.play();
+                    
+                    // Remove event listeners after first interaction
+                    events.forEach(event => {
+                        document.removeEventListener(event, handleInteraction);
+                    });
+                }
+            };
+            
+            events.forEach(event => {
+                document.addEventListener(event, handleInteraction);
+            });
+        }
+        
+        play() {
+            this.audio.play()
+                .then(() => {
+                    this.isPlaying = true;
+                    this.button.innerHTML = '🔊'; // Playing icon
+                })
+                .catch(error => {
+                    console.log('Audio playback failed:', error);
+                });
+        }
+        
+        pause() {
+            this.audio.pause();
+            this.isPlaying = false;
+            this.button.innerHTML = '🔇'; // Muted icon
+        }
+        
+        toggle() {
+            if (this.isPlaying) {
+                this.pause();
+            } else {
+                this.play();
+            }
+        }
+        
+        setVolume(volume) {
+            this.audio.volume = Math.max(0, Math.min(1, volume));
+        }
+    }
+
+    // Countdown Timer
+    var end = new Date('March 1, 2026 15:00:00').getTime();
+
+    setInterval(function() {
+        var now = new Date().getTime();
+        var gap = end - now;
+
+        var second = 1000;
+        var minute = second * 60;
+        var hour = minute * 60;
+        var day = hour * 24;
+
+        var d = Math.floor(gap / day);
+        var h = Math.floor((gap % day) / hour);
+        var m = Math.floor((gap % hour) / minute);
+        var s = Math.floor((gap % minute) / second);
+
+        document.getElementById('d').innerText = d < 10 ? '0' + d : d;
+        document.getElementById('h').innerText = h < 10 ? '0' + h : h;
+        document.getElementById('m').innerText = m < 10 ? '0' + m : m;
+        document.getElementById('s').innerText = s < 10 ? '0' + s : s;
+    }, 1000);
+
+    // Intersection Observer to trigger animations on scroll
+    const observerOptions = {
+        threshold: 0.3,
+        rootMargin: '0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.animationPlayState = 'running';
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    // Observe all gallery items
+    document.addEventListener('DOMContentLoaded', () => {
+        const galleryItems = document.querySelectorAll('.gallery-item1, .gallery-item2, .gallery-item3, .gallery-item4');
+        
+        galleryItems.forEach(item => {
+            observer.observe(item);
+        });
+
+        // Initialize background music
+        const bgMusic = new BackgroundMusic('birthday.mp3', {
+            loop: true,      // Loop the music
+            volume: 0.3      // 30% volume (0.0 to 1.0)
+        });
+        
+        // Optional: Expose to global scope if you want to control it from console
+        window.bgMusic = bgMusic;
+    });
+
+    // Show Invitation on Button Click
+    function showInvitation() {
+        document.getElementById('intro').style.display = 'none';
+        const invitation = document.getElementById('invitation');
+        invitation.classList.remove('hidden');
+        invitation.classList.add('visible');
+    }
+
+    // Toggle Mobile Menu
+    function toggleMenu() {
+        const menu = document.getElementById('navMenu');
+        menu.classList.toggle('active');
+    }
+
+    // Toggle Sound (placeholder function)
+    function toggleSound() {
+        const soundControl = document.getElementById('soundControl');
+        // Add sound toggle functionality here if needed
+        console.log('Sound toggle clicked');    
+    }
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+        const menu = document.getElementById('navMenu');
+        const hamburger = document.querySelector('.hamburger');
+        
+        if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+            menu.classList.remove('active');
+        }
+    });
+
+    console.log('Script loaded!');
+    </script>
+</body>
+</html>
